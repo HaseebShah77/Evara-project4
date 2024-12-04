@@ -1,0 +1,876 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop-Cart</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="Asstes/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+        integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <script>
+        $(function () {
+            $('#example , #example1').tooltip();
+        });
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="header-info">
+                            <ul>
+                                <li><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                                        class="bi bi-phone" viewBox="0 0 16 16">
+                                        <path
+                                            d="M11 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z" />
+                                        <path d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2" />
+                                    </svg><a href="page-contact.html">(+01) - 2345 - 6789</a></li>
+                                <li><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                                        class="bi bi-geo-alt" viewBox="0 0 16 16">
+                                        <path
+                                            d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10" />
+                                        <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
+                                    </svg><a href="page-contact.html">Our location</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <p class="mid">Trendy 25silver jewelry, save up 35% off today <a href="shop-grid-right.html"
+                                class="shop-a">Shop now</a></p>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div class="header-info header-info-right">
+                            <ul>
+                                <div class="dropdown">
+                                    <li><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                            fill="currentColor" class="bi bi-globe-americas" viewBox="0 0 16 16">
+                                            <path
+                                                d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0M2.04 4.326c.325 1.329 2.532 2.54 3.717 3.19.48.263.793.434.743.484q-.121.12-.242.234c-.416.396-.787.749-.758 1.266.035.634.618.824 1.214 1.017.577.188 1.168.38 1.286.983.082.417-.075.988-.22 1.52-.215.782-.406 1.48.22 1.48 1.5-.5 3.798-3.186 4-5 .138-1.243-2-2-3.5-2.5-.478-.16-.755.081-.99.284-.172.15-.322.279-.51.216-.445-.148-2.5-2-1.5-2.5.78-.39.952-.171 1.227.182.078.099.163.208.273.318.609.304.662-.132.723-.633.039-.322.081-.671.277-.867.434-.434 1.265-.791 2.028-1.12.712-.306 1.365-.587 1.579-.88A7 7 0 1 1 2.04 4.327Z" />
+                                        </svg></li>
+                                    <a class="dropdown-toggle" href="#" data-toggle="dropdown">English</a>
+                                    <div class="dropdown-menu">
+                                        <div class="dropdown-item">Français</div>
+                                        <div class="dropdown-item">Deutsch</div>
+                                        <div class="dropdown-item">Pусский</div>
+                                    </div>
+                                </div>
+
+                                <li><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                                        class="bi bi-person" viewBox="0 0 16 16">
+                                        <path
+                                            d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z" />
+                                    </svg><a href="page-login.html">Log In / Sign Up</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Header 2 -->
+
+        <div class="container">
+            <div class="header-wrap">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="Asstes/img/logo.svg" class="img-fluid" width="120px" alt="">
+                    </a>
+                </div>
+
+                <div class="header-right">
+                    <div class="middle">
+                        <form action="#">
+                            <select name="" id="select">
+                                <option value="">All Categories</option>
+                                <option value="">Women's</option>
+                                <option value="">Men's</option>
+                                <option value="">Cellphones</option>
+                                <option value="">Computer</option>
+                                <option value="">Electronics</option>
+                                <option value="">Accessories</option>
+                                <option value="">Home & Garden</option>
+                                <option value="">Luggage</option>
+                                <option value="">Shoes</option>
+                                <option value="">Mother & Kids</option>
+                            </select>
+                            <input type="text" placeholder="Search for items..." class="search">
+                        </form>
+                    </div>
+                    <a href="shop-wishlist.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                            class="bi bi-heart" viewBox="0 0 16 16">
+                            <path
+                                d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15" />
+                        </svg>
+                    </a>
+                    <sup><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-4-circle-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M7.519 5.057c-.886 1.418-1.772 2.838-2.542 4.265v1.12H8.85V12h1.26v-1.559h1.007V9.334H10.11V4.002H8.176zM6.225 9.281v.053H8.85V5.063h-.065c-.867 1.33-1.787 2.806-2.56 4.218" />
+                        </svg></sup>
+
+                    <a href="shop-cart.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                            class="bi bi-bag" viewBox="0 0 16 16">
+                            <path
+                                d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z" />
+                        </svg>
+                    </a>
+                    <sup><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-2-circle-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.646 6.24c0-.691.493-1.306 1.336-1.306.756 0 1.313.492 1.313 1.236 0 .697-.469 1.23-.902 1.705l-2.971 3.293V12h5.344v-1.107H7.268v-.077l1.974-2.22.096-.107c.688-.763 1.287-1.428 1.287-2.43 0-1.266-1.031-2.215-2.613-2.215-1.758 0-2.637 1.19-2.637 2.402v.065h1.271v-.07Z" />
+                        </svg></sup>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Navbar -->
+
+        <div class="container">
+            <nav class="navbar navbar-expand-lg">
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle li1" href="#" role="button" data-toggle="dropdown">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-microsoft" viewBox="0 0 16 16">
+                                    <path
+                                        d="M7.462 0H0v7.19h7.462zM16 0H8.538v7.19H16zM7.462 8.211H0V16h7.462zm8.538 0H8.538V16H16z" />
+                                </svg>
+                                Browse Categories
+                            </a>
+                            <div class="dropdown-menu ">
+                                <a class="dropdown-item" href="shop-grid-right.html">Women's Clothing</a>
+                                <a class="dropdown-item" href="shop-grid-right.html">Men's Clothing</a>
+                                <a class="dropdown-item" href="shop-grid-right.html">Cellphones</a>
+                                <a class="dropdown-item" href="shop-grid-right.html">Computer & Office</a>
+                                <a class="dropdown-item" href="shop-grid-right.html">Consumer Electronics</a>
+                                <a class="dropdown-item" href="shop-grid-right.html">Jewelry & Accessories</a>
+                                <a class="dropdown-item" href="shop-grid-right.html">Home & Garden</a>
+                                <a class="dropdown-item" href="shop-grid-right.html">Shoes</a>
+                                <a class="dropdown-item" href="shop-grid-right.html">Mother & Kids</a>
+                                <a class="dropdown-item" href="shop-grid-right.html">Outdoor Fun</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+                                aria-expanded="false">
+                                Home
+                            </a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="index.html">Home 1</a>
+                                <a class="dropdown-item" href="index2.html">Home 2</a>
+                                <a class="dropdown-item" href="index3.html">Home 3</a>
+                                <a class="dropdown-item" href="index4.html">Home 4</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+                                aria-expanded="false">
+                                Shop
+                            </a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="shop-grid-right.html">Shop List – Right Sidebar</a>
+                                <a class="dropdown-item" href="shop-list-left.html">Shop List – Left Sidebar</a>
+                                <a class="dropdown-item" href="shop-wide.html">Shop - Wide</a>
+                                <a class="dropdown-item" href="shop-filter.html">Shop – Filter</a>
+                                <a class="dropdown-item" href="shop-wishlist.html">Shop – Wishlist</a>
+                                <a class="dropdown-item" href="shop-cart.html">Shop – Cart</a>
+                                <a class="dropdown-item" href="shop-checkout.html">Shop – Checkout</a>
+                                <a class="dropdown-item" href="shop-compare.html">Shop – Compare</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+                                aria-expanded="false">
+                                Mega Menu
+                            </a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+                                aria-expanded="false">
+                                Blog
+                            </a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="blog-category-grid.html">Blog Category Grid</a>
+                                <a class="dropdown-item" href="blog-category-list.html">Blog Category List</a>
+                                <a class="dropdown-item" href="blog-category-big.html">Blog Category Big</a>
+                                <a class="dropdown-item" href="blog-category-wide.html">Blog Category Wide</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+                                aria-expanded="false">
+                                Pages
+                            </a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="about.html">About Us</a>
+                                <a class="dropdown-item" href="page-contact.html">Contact</a>
+                                <a class="dropdown-item" href="page-login.html">Login/Register</a>
+                                <a class="dropdown-item" href="page-purchase-guide.html">Purchase Guide</a>
+                                <a class="dropdown-item" href="privacy-policy.html">Privacy Policy</a>
+                                <a class="dropdown-item" href="terms.html">Terms of Service</a>
+                                <a class="dropdown-item" href="page-404.html">404 Page</a>
+                            </div>
+                        </li>
+
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="page-contact.html">Contact</a>
+                        </li>
+
+
+                        <div class="hotline">
+                            <p>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                    class="bi bi-headset" viewBox="0 0 16 16">
+                                    <path
+                                        d="M8 1a5 5 0 0 0-5 5v1h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a6 6 0 1 1 12 0v6a2.5 2.5 0 0 1-2.5 2.5H9.366a1 1 0 0 1-.866.5h-1a1 1 0 1 1 0-2h1a1 1 0 0 1 .866.5H11.5A1.5 1.5 0 0 0 13 12h-1a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h1V6a5 5 0 0 0-5-5" />
+                                </svg>
+                                <span>Hotline</span>1900-888
+                            </p>
+                        </div>
+
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="crumb">
+        <div class="container">
+            <ol class="breadcrumb mt-4">
+                <li class="breadcrumb-item">Home </li>
+                <li class="breadcrumb-item">Shop </li>
+                <li class="breadcrumb-item">Your Cart </li>
+            </ol>
+        </div>
+    </section>
+
+    <section class="product-table py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12" style="overflow-x:auto;">
+                    <table class="table" style="border-top: 1px solid #dee2e6;">
+                        <thead>
+                            <tr>
+                                <th>Image</th>
+                                <th>Name</th>
+                                <th>Price</th>
+                                <th>Quantity</th>
+                                <th>Subtotal</th>
+                                <th>Remove</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <img src="Asstes/img/product-1-1.jpg" class="table-img" alt="">
+                                </td>
+                                <td>
+                                    <h5 class="table-product"><a href="shop-grid-right.html">J.Crew Mercantile
+                                            Women's Short-Sleeve</a></h5>
+                                    <p class="table-p">Maboriosam in a tonto nesciung eget
+                                        <br>
+                                        distingy magndapibus.
+                                    </p>
+                                </td>
+                                <td>
+                                    <span>$65.00</span>
+                                </td>
+                                <td>
+                                    <input type="number" placeholder="1" class="input-num">
+                                </td>
+                                <td>
+                                    <span>$65.00</span>
+                                </td>
+                                <td>
+                                    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="#088178" class="bi bi-trash" viewBox="0 0 16 16">
+                                            <path
+                                                d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0z" />
+                                            <path
+                                                d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4zM2.5 3h11V2h-11z" />
+                                        </svg></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="Asstes/img/product-11-2.jpg" class="table-img" alt="">
+                                </td>
+                                <td>
+                                    <h5 class="table-product"><a href="shop-grid-right.html">Amazon Essentials
+                                            Women's Tank</a></h5>
+                                    <p class="table-p">Sit at ipsum amet clita no est,
+                                        <br>
+                                        sed amet sadipscing et gubergren
+                                    </p>
+                                </td>
+                                <td>
+                                    <span>$75.00</span>
+                                </td>
+                                <td>
+                                    <input type="number" placeholder="2" class="input-num">
+                                </td>
+                                <td>
+                                    <span>$75.00</span>
+                                </td>
+                                <td>
+                                    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="#088178" class="bi bi-trash" viewBox="0 0 16 16">
+                                            <path
+                                                d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0z" />
+                                            <path
+                                                d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4zM2.5 3h11V2h-11z" />
+                                        </svg></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="Asstes/img/product-6-1 (1).jpg" class="table-img" alt="">
+                                </td>
+                                <td>
+                                    <h5 class="table-product"><a href="shop-grid-right.html">Amazon Brand - Daily
+                                            Ritual Women's Jersey</a></h5>
+                                    <p class="table-p">Erat amet et et amet diam et et.
+                                        <br>
+                                        Justo amet at dolore
+                                    </p>
+                                </td>
+                                <td>
+                                    <span>$62.00</span>
+                                </td>
+                                <td>
+                                    <input type="number" placeholder="1" class="input-num">
+                                </td>
+                                <td>
+                                    <span>$62.00</span>
+                                </td>
+                                <td>
+                                    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="#088178" class="bi bi-trash" viewBox="0 0 16 16">
+                                            <path
+                                                d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0z" />
+                                            <path
+                                                d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4zM2.5 3h11V2h-11z" />
+                                        </svg></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="6" class="clear">
+                                    <a href="#">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                                            <path
+                                                d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708" />
+                                        </svg>
+                                        Clear Cart
+                                    </a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="cart-action">
+                        <button type="button" class="table-btn"><svg xmlns="http://www.w3.org/2000/svg" width="12"
+                                height="12" fill="white" class="bi bi-shuffle" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M0 3.5A.5.5 0 0 1 .5 3H1c2.202 0 3.827 1.24 4.874 2.418.49.552.865 1.102 1.126 1.532.26-.43.636-.98 1.126-1.532C9.173 4.24 10.798 3 13 3v1c-1.798 0-3.173 1.01-4.126 2.082A9.6 9.6 0 0 0 7.556 8a9.6 9.6 0 0 0 1.317 1.918C9.828 10.99 11.204 12 13 12v1c-2.202 0-3.827-1.24-4.874-2.418A10.6 10.6 0 0 1 7 9.05c-.26.43-.636.98-1.126 1.532C4.827 11.76 3.202 13 1 13H.5a.5.5 0 0 1 0-1H1c1.798 0 3.173-1.01 4.126-2.082A9.6 9.6 0 0 0 6.444 8a9.6 9.6 0 0 0-1.317-1.918C4.172 5.01 2.796 4 1 4H.5a.5.5 0 0 1-.5-.5" />
+                                <path
+                                    d="M13 5.466V1.534a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384l-2.36 1.966a.25.25 0 0 1-.41-.192m0 9v-3.932a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384l-2.36 1.966a.25.25 0 0 1-.41-.192" />
+                            </svg> Update Cart</button>
+                        <button type="button" class="table-btn"><svg xmlns="http://www.w3.org/2000/svg" width="12"
+                                height="12" fill="white" class="bi bi-bag" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z" />
+                            </svg> Continue Shopping</button>
+                    </div>
+                    <div class="line">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#e2e9e1"
+                            class="bi bi-fingerprint" viewBox="0 0 16 16">
+                            <path
+                                d="M8.06 6.5a.5.5 0 0 1 .5.5v.776a11.5 11.5 0 0 1-.552 3.519l-1.331 4.14a.5.5 0 0 1-.952-.305l1.33-4.141a10.5 10.5 0 0 0 .504-3.213V7a.5.5 0 0 1 .5-.5Z" />
+                            <path
+                                d="M6.06 7a2 2 0 1 1 4 0 .5.5 0 1 1-1 0 1 1 0 1 0-2 0v.332q0 .613-.066 1.221A.5.5 0 0 1 6 8.447q.06-.555.06-1.115zm3.509 1a.5.5 0 0 1 .487.513 11.5 11.5 0 0 1-.587 3.339l-1.266 3.8a.5.5 0 0 1-.949-.317l1.267-3.8a10.5 10.5 0 0 0 .535-3.048A.5.5 0 0 1 9.569 8m-3.356 2.115a.5.5 0 0 1 .33.626L5.24 14.939a.5.5 0 1 1-.955-.296l1.303-4.199a.5.5 0 0 1 .625-.329" />
+                            <path
+                                d="M4.759 5.833A3.501 3.501 0 0 1 11.559 7a.5.5 0 0 1-1 0 2.5 2.5 0 0 0-4.857-.833.5.5 0 1 1-.943-.334m.3 1.67a.5.5 0 0 1 .449.546 10.7 10.7 0 0 1-.4 2.031l-1.222 4.072a.5.5 0 1 1-.958-.287L4.15 9.793a9.7 9.7 0 0 0 .363-1.842.5.5 0 0 1 .546-.449Zm6 .647a.5.5 0 0 1 .5.5c0 1.28-.213 2.552-.632 3.762l-1.09 3.145a.5.5 0 0 1-.944-.327l1.089-3.145c.382-1.105.578-2.266.578-3.435a.5.5 0 0 1 .5-.5Z" />
+                            <path
+                                d="M3.902 4.222a5 5 0 0 1 5.202-2.113.5.5 0 0 1-.208.979 4 4 0 0 0-4.163 1.69.5.5 0 0 1-.831-.556m6.72-.955a.5.5 0 0 1 .705-.052A4.99 4.99 0 0 1 13.059 7v1.5a.5.5 0 1 1-1 0V7a3.99 3.99 0 0 0-1.386-3.028.5.5 0 0 1-.051-.705M3.68 5.842a.5.5 0 0 1 .422.568q-.044.289-.044.59c0 .71-.1 1.417-.298 2.1l-1.14 3.923a.5.5 0 1 1-.96-.279L2.8 8.821A6.5 6.5 0 0 0 3.058 7q0-.375.054-.736a.5.5 0 0 1 .568-.422m8.882 3.66a.5.5 0 0 1 .456.54c-.084 1-.298 1.986-.64 2.934l-.744 2.068a.5.5 0 0 1-.941-.338l.745-2.07a10.5 10.5 0 0 0 .584-2.678.5.5 0 0 1 .54-.456" />
+                            <path
+                                d="M4.81 1.37A6.5 6.5 0 0 1 14.56 7a.5.5 0 1 1-1 0 5.5 5.5 0 0 0-8.25-4.765.5.5 0 0 1-.5-.865m-.89 1.257a.5.5 0 0 1 .04.706A5.48 5.48 0 0 0 2.56 7a.5.5 0 0 1-1 0c0-1.664.626-3.184 1.655-4.333a.5.5 0 0 1 .706-.04ZM1.915 8.02a.5.5 0 0 1 .346.616l-.779 2.767a.5.5 0 1 1-.962-.27l.778-2.767a.5.5 0 0 1 .617-.346m12.15.481a.5.5 0 0 1 .49.51c-.03 1.499-.161 3.025-.727 4.533l-.07.187a.5.5 0 0 1-.936-.351l.07-.187c.506-1.35.634-2.74.663-4.202a.5.5 0 0 1 .51-.49" />
+                        </svg>
+                    </div>
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="shipping">
+                        <h4>Calculate Shipping</h4>
+                        <p>Flat rate: <span class="text-green">5%</span></p>
+                    </div>
+                    <select class="form-control select">
+                        <option value="" data-select2-id="6">Choose a option...</option>
+                        <option value="AX" data-select2-id="16">Aland Islands</option>
+                        <option value="AF" data-select2-id="17">Afghanistan</option>
+                        <option value="AL" data-select2-id="18">Albania</option>
+                        <option value="DZ" data-select2-id="19">Algeria</option>
+                        <option value="AD" data-select2-id="20">Andorra</option>
+                        <option value="AO" data-select2-id="21">Angola</option>
+                        <option value="AI" data-select2-id="22">Anguilla</option>
+                        <option value="AQ" data-select2-id="23">Antarctica</option>
+                        <option value="AG" data-select2-id="24">Antigua and Barbuda</option>
+                        <option value="AR" data-select2-id="25">Argentina</option>
+                        <option value="AM" data-select2-id="26">Armenia</option>
+                        <option value="AW" data-select2-id="27">Aruba</option>
+                        <option value="AU" data-select2-id="28">Australia</option>
+                        <option value="AT" data-select2-id="29">Austria</option>
+                        <option value="AZ" data-select2-id="30">Azerbaijan</option>
+                        <option value="BS" data-select2-id="31">Bahamas</option>
+                        <option value="BH" data-select2-id="32">Bahrain</option>
+                        <option value="BD" data-select2-id="33">Bangladesh</option>
+                        <option value="BB" data-select2-id="34">Barbados</option>
+                        <option value="BY" data-select2-id="35">Belarus</option>
+                        <option value="PW" data-select2-id="36">Belau</option>
+                        <option value="BE" data-select2-id="37">Belgium</option>
+                        <option value="BZ" data-select2-id="38">Belize</option>
+                        <option value="BJ" data-select2-id="39">Benin</option>
+                        <option value="BM" data-select2-id="40">Bermuda</option>
+                        <option value="BT" data-select2-id="41">Bhutan</option>
+                        <option value="BO" data-select2-id="42">Bolivia</option>
+                        <option value="BQ" data-select2-id="43">Bonaire, Saint Eustatius and Saba</option>
+                        <option value="BA" data-select2-id="44">Bosnia and Herzegovina</option>
+                        <option value="BW" data-select2-id="45">Botswana</option>
+                        <option value="BV" data-select2-id="46">Bouvet Island</option>
+                        <option value="BR" data-select2-id="47">Brazil</option>
+                        <option value="IO" data-select2-id="48">British Indian Ocean Territory</option>
+                        <option value="VG" data-select2-id="49">British Virgin Islands</option>
+                        <option value="BN" data-select2-id="50">Brunei</option>
+                        <option value="BG" data-select2-id="51">Bulgaria</option>
+                        <option value="BF" data-select2-id="52">Burkina Faso</option>
+                        <option value="BI" data-select2-id="53">Burundi</option>
+                        <option value="KH" data-select2-id="54">Cambodia</option>
+                        <option value="CM" data-select2-id="55">Cameroon</option>
+                        <option value="CA" data-select2-id="56">Canada</option>
+                        <option value="CV" data-select2-id="57">Cape Verde</option>
+                        <option value="KY" data-select2-id="58">Cayman Islands</option>
+                        <option value="CF" data-select2-id="59">Central African Republic</option>
+                        <option value="TD" data-select2-id="60">Chad</option>
+                        <option value="CL" data-select2-id="61">Chile</option>
+                        <option value="CN" data-select2-id="62">China</option>
+                        <option value="CX" data-select2-id="63">Christmas Island</option>
+                        <option value="CC" data-select2-id="64">Cocos (Keeling) Islands</option>
+                        <option value="CO" data-select2-id="65">Colombia</option>
+                        <option value="KM" data-select2-id="66">Comoros</option>
+                        <option value="CG" data-select2-id="67">Congo (Brazzaville)</option>
+                        <option value="CD" data-select2-id="68">Congo (Kinshasa)</option>
+                        <option value="CK" data-select2-id="69">Cook Islands</option>
+                        <option value="CR" data-select2-id="70">Costa Rica</option>
+                        <option value="HR" data-select2-id="71">Croatia</option>
+                        <option value="CU" data-select2-id="72">Cuba</option>
+                        <option value="CW" data-select2-id="73">CuraÇao</option>
+                        <option value="CY" data-select2-id="74">Cyprus</option>
+                        <option value="CZ" data-select2-id="75">Czech Republic</option>
+                        <option value="DK" data-select2-id="76">Denmark</option>
+                        <option value="DJ" data-select2-id="77">Djibouti</option>
+                        <option value="DM" data-select2-id="78">Dominica</option>
+                        <option value="DO" data-select2-id="79">Dominican Republic</option>
+                        <option value="EC" data-select2-id="80">Ecuador</option>
+                        <option value="EG" data-select2-id="81">Egypt</option>
+                        <option value="SV" data-select2-id="82">El Salvador</option>
+                        <option value="GQ" data-select2-id="83">Equatorial Guinea</option>
+                        <option value="ER" data-select2-id="84">Eritrea</option>
+                        <option value="EE" data-select2-id="85">Estonia</option>
+                        <option value="ET" data-select2-id="86">Ethiopia</option>
+                        <option value="FK" data-select2-id="87">Falkland Islands</option>
+                        <option value="FO" data-select2-id="88">Faroe Islands</option>
+                        <option value="FJ" data-select2-id="89">Fiji</option>
+                        <option value="FI" data-select2-id="90">Finland</option>
+                        <option value="FR" data-select2-id="91">France</option>
+                        <option value="GF" data-select2-id="92">French Guiana</option>
+                        <option value="PF" data-select2-id="93">French Polynesia</option>
+                        <option value="TF" data-select2-id="94">French Southern Territories</option>
+                        <option value="GA" data-select2-id="95">Gabon</option>
+                        <option value="GM" data-select2-id="96">Gambia</option>
+                        <option value="GE" data-select2-id="97">Georgia</option>
+                        <option value="DE" data-select2-id="98">Germany</option>
+                        <option value="GH" data-select2-id="99">Ghana</option>
+                        <option value="GI" data-select2-id="100">Gibraltar</option>
+                        <option value="GR" data-select2-id="101">Greece</option>
+                        <option value="GL" data-select2-id="102">Greenland</option>
+                        <option value="GD" data-select2-id="103">Grenada</option>
+                        <option value="GP" data-select2-id="104">Guadeloupe</option>
+                        <option value="GT" data-select2-id="105">Guatemala</option>
+                        <option value="GG" data-select2-id="106">Guernsey</option>
+                        <option value="GN" data-select2-id="107">Guinea</option>
+                        <option value="GW" data-select2-id="108">Guinea-Bissau</option>
+                        <option value="GY" data-select2-id="109">Guyana</option>
+                        <option value="HT" data-select2-id="110">Haiti</option>
+                        <option value="HM" data-select2-id="111">Heard Island and McDonald Islands</option>
+                        <option value="HN" data-select2-id="112">Honduras</option>
+                        <option value="HK" data-select2-id="113">Hong Kong</option>
+                        <option value="HU" data-select2-id="114">Hungary</option>
+                        <option value="IS" data-select2-id="115">Iceland</option>
+                        <option value="IN" data-select2-id="116">India</option>
+                        <option value="ID" data-select2-id="117">Indonesia</option>
+                        <option value="IR" data-select2-id="118">Iran</option>
+                        <option value="IQ" data-select2-id="119">Iraq</option>
+                        <option value="IM" data-select2-id="120">Isle of Man</option>
+                        <option value="IL" data-select2-id="121">Israel</option>
+                        <option value="IT" data-select2-id="122">Italy</option>
+                        <option value="CI" data-select2-id="123">Ivory Coast</option>
+                        <option value="JM" data-select2-id="124">Jamaica</option>
+                        <option value="JP" data-select2-id="125">Japan</option>
+                        <option value="JE" data-select2-id="126">Jersey</option>
+                        <option value="JO" data-select2-id="127">Jordan</option>
+                        <option value="KZ" data-select2-id="128">Kazakhstan</option>
+                        <option value="KE" data-select2-id="129">Kenya</option>
+                        <option value="KI" data-select2-id="130">Kiribati</option>
+                        <option value="KW" data-select2-id="131">Kuwait</option>
+                        <option value="KG" data-select2-id="132">Kyrgyzstan</option>
+                        <option value="LA" data-select2-id="133">Laos</option>
+                        <option value="LV" data-select2-id="134">Latvia</option>
+                        <option value="LB" data-select2-id="135">Lebanon</option>
+                        <option value="LS" data-select2-id="136">Lesotho</option>
+                        <option value="LR" data-select2-id="137">Liberia</option>
+                        <option value="LY" data-select2-id="138">Libya</option>
+                        <option value="LI" data-select2-id="139">Liechtenstein</option>
+                        <option value="LT" data-select2-id="140">Lithuania</option>
+                        <option value="LU" data-select2-id="141">Luxembourg</option>
+                        <option value="MO" data-select2-id="142">Macao S.A.R., China</option>
+                        <option value="MK" data-select2-id="143">Macedonia</option>
+                        <option value="MG" data-select2-id="144">Madagascar</option>
+                        <option value="MW" data-select2-id="145">Malawi</option>
+                        <option value="MY" data-select2-id="146">Malaysia</option>
+                        <option value="MV" data-select2-id="147">Maldives</option>
+                        <option value="ML" data-select2-id="148">Mali</option>
+                        <option value="MT" data-select2-id="149">Malta</option>
+                        <option value="MH" data-select2-id="150">Marshall Islands</option>
+                        <option value="MQ" data-select2-id="151">Martinique</option>
+                        <option value="MR" data-select2-id="152">Mauritania</option>
+                        <option value="MU" data-select2-id="153">Mauritius</option>
+                        <option value="YT" data-select2-id="154">Mayotte</option>
+                        <option value="MX" data-select2-id="155">Mexico</option>
+                        <option value="FM" data-select2-id="156">Micronesia</option>
+                        <option value="MD" data-select2-id="157">Moldova</option>
+                        <option value="MC" data-select2-id="158">Monaco</option>
+                        <option value="MN" data-select2-id="159">Mongolia</option>
+                        <option value="ME" data-select2-id="160">Montenegro</option>
+                        <option value="MS" data-select2-id="161">Montserrat</option>
+                        <option value="MA" data-select2-id="162">Morocco</option>
+                        <option value="MZ" data-select2-id="163">Mozambique</option>
+                        <option value="MM" data-select2-id="164">Myanmar</option>
+                        <option value="NA" data-select2-id="165">Namibia</option>
+                        <option value="NR" data-select2-id="166">Nauru</option>
+                        <option value="NP" data-select2-id="167">Nepal</option>
+                        <option value="NL" data-select2-id="168">Netherlands</option>
+                        <option value="AN" data-select2-id="169">Netherlands Antilles</option>
+                        <option value="NC" data-select2-id="170">New Caledonia</option>
+                        <option value="NZ" data-select2-id="171">New Zealand</option>
+                        <option value="NI" data-select2-id="172">Nicaragua</option>
+                        <option value="NE" data-select2-id="173">Niger</option>
+                        <option value="NG" data-select2-id="174">Nigeria</option>
+                        <option value="NU" data-select2-id="175">Niue</option>
+                        <option value="NF" data-select2-id="176">Norfolk Island</option>
+                        <option value="KP" data-select2-id="177">North Korea</option>
+                        <option value="NO" data-select2-id="178">Norway</option>
+                        <option value="OM" data-select2-id="179">Oman</option>
+                        <option value="PK" data-select2-id="180">Pakistan</option>
+                        <option value="PS" data-select2-id="181">Palestinian Territory</option>
+                        <option value="PA" data-select2-id="182">Panama</option>
+                        <option value="PG" data-select2-id="183">Papua New Guinea</option>
+                        <option value="PY" data-select2-id="184">Paraguay</option>
+                        <option value="PE" data-select2-id="185">Peru</option>
+                        <option value="PH" data-select2-id="186">Philippines</option>
+                        <option value="PN" data-select2-id="187">Pitcairn</option>
+                        <option value="PL" data-select2-id="188">Poland</option>
+                        <option value="PT" data-select2-id="189">Portugal</option>
+                        <option value="QA" data-select2-id="190">Qatar</option>
+                        <option value="IE" data-select2-id="191">Republic of Ireland</option>
+                        <option value="RE" data-select2-id="192">Reunion</option>
+                        <option value="RO" data-select2-id="193">Romania</option>
+                        <option value="RU" data-select2-id="194">Russia</option>
+                        <option value="RW" data-select2-id="195">Rwanda</option>
+                        <option value="ST" data-select2-id="196">São Tomé and Príncipe</option>
+                        <option value="BL" data-select2-id="197">Saint Barthélemy</option>
+                        <option value="SH" data-select2-id="198">Saint Helena</option>
+                        <option value="KN" data-select2-id="199">Saint Kitts and Nevis</option>
+                        <option value="LC" data-select2-id="200">Saint Lucia</option>
+                        <option value="SX" data-select2-id="201">Saint Martin (Dutch part)</option>
+                        <option value="MF" data-select2-id="202">Saint Martin (French part)</option>
+                        <option value="PM" data-select2-id="203">Saint Pierre and Miquelon</option>
+                        <option value="VC" data-select2-id="204">Saint Vincent and the Grenadines</option>
+                        <option value="SM" data-select2-id="205">San Marino</option>
+                        <option value="SA" data-select2-id="206">Saudi Arabia</option>
+                        <option value="SN" data-select2-id="207">Senegal</option>
+                        <option value="RS" data-select2-id="208">Serbia</option>
+                        <option value="SC" data-select2-id="209">Seychelles</option>
+                        <option value="SL" data-select2-id="210">Sierra Leone</option>
+                        <option value="SG" data-select2-id="211">Singapore</option>
+                        <option value="SK" data-select2-id="212">Slovakia</option>
+                        <option value="SI" data-select2-id="213">Slovenia</option>
+                        <option value="SB" data-select2-id="214">Solomon Islands</option>
+                        <option value="SO" data-select2-id="215">Somalia</option>
+                        <option value="ZA" data-select2-id="216">South Africa</option>
+                        <option value="GS" data-select2-id="217">South Georgia/Sandwich Islands</option>
+                        <option value="KR" data-select2-id="218">South Korea</option>
+                        <option value="SS" data-select2-id="219">South Sudan</option>
+                        <option value="ES" data-select2-id="220">Spain</option>
+                        <option value="LK" data-select2-id="221">Sri Lanka</option>
+                        <option value="SD" data-select2-id="222">Sudan</option>
+                        <option value="SR" data-select2-id="223">Suriname</option>
+                        <option value="SJ" data-select2-id="224">Svalbard and Jan Mayen</option>
+                        <option value="SZ" data-select2-id="225">Swaziland</option>
+                        <option value="SE" data-select2-id="226">Sweden</option>
+                        <option value="CH" data-select2-id="227">Switzerland</option>
+                        <option value="SY" data-select2-id="228">Syria</option>
+                        <option value="TW" data-select2-id="229">Taiwan</option>
+                        <option value="TJ" data-select2-id="230">Tajikistan</option>
+                        <option value="TZ" data-select2-id="231">Tanzania</option>
+                        <option value="TH" data-select2-id="232">Thailand</option>
+                        <option value="TL" data-select2-id="233">Timor-Leste</option>
+                        <option value="TG" data-select2-id="234">Togo</option>
+                        <option value="TK" data-select2-id="235">Tokelau</option>
+                        <option value="TO" data-select2-id="236">Tonga</option>
+                        <option value="TT" data-select2-id="237">Trinidad and Tobago</option>
+                        <option value="TN" data-select2-id="238">Tunisia</option>
+                        <option value="TR" data-select2-id="239">Turkey</option>
+                        <option value="TM" data-select2-id="240">Turkmenistan</option>
+                        <option value="TC" data-select2-id="241">Turks and Caicos Islands</option>
+                        <option value="TV" data-select2-id="242">Tuvalu</option>
+                        <option value="UG" data-select2-id="243">Uganda</option>
+                        <option value="UA" data-select2-id="244">Ukraine</option>
+                        <option value="AE" data-select2-id="245">United Arab Emirates</option>
+                        <option value="GB" data-select2-id="246">United Kingdom (UK)</option>
+                        <option value="US" data-select2-id="247">USA (US)</option>
+                        <option value="UY" data-select2-id="248">Uruguay</option>
+                        <option value="UZ" data-select2-id="249">Uzbekistan</option>
+                        <option value="VU" data-select2-id="250">Vanuatu</option>
+                        <option value="VA" data-select2-id="251">Vatican</option>
+                        <option value="VE" data-select2-id="252">Venezuela</option>
+                        <option value="VN" data-select2-id="253">Vietnam</option>
+                        <option value="WF" data-select2-id="254">Wallis and Futuna</option>
+                        <option value="EH" data-select2-id="255">Western Sahara</option>
+                        <option value="WS" data-select2-id="256">Western Samoa</option>
+                        <option value="YE" data-select2-id="257">Yemen</option>
+                        <option value="ZM" data-select2-id="258">Zambia</option>
+                        <option value="ZW" data-select2-id="259">Zimbabwe</option>
+                    </select>
+                    <form class="country">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <input required="required" placeholder="State / Country" name="name" type="text">
+                            </div>
+                            <div class="col-lg-6">
+                                <input required="required" placeholder="PostCode / ZIP" name="name" type="text">
+                            </div>
+                        </div>
+                    </form>
+
+                    <button type="button" class="table-btn shuffle"><svg xmlns="http://www.w3.org/2000/svg" width="12"
+                            height="12" fill="white" class="bi bi-shuffle" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M0 3.5A.5.5 0 0 1 .5 3H1c2.202 0 3.827 1.24 4.874 2.418.49.552.865 1.102 1.126 1.532.26-.43.636-.98 1.126-1.532C9.173 4.24 10.798 3 13 3v1c-1.798 0-3.173 1.01-4.126 2.082A9.6 9.6 0 0 0 7.556 8a9.6 9.6 0 0 0 1.317 1.918C9.828 10.99 11.204 12 13 12v1c-2.202 0-3.827-1.24-4.874-2.418A10.6 10.6 0 0 1 7 9.05c-.26.43-.636.98-1.126 1.532C4.827 11.76 3.202 13 1 13H.5a.5.5 0 0 1 0-1H1c1.798 0 3.173-1.01 4.126-2.082A9.6 9.6 0 0 0 6.444 8a9.6 9.6 0 0 0-1.317-1.918C4.172 5.01 2.796 4 1 4H.5a.5.5 0 0 1-.5-.5" />
+                            <path
+                                d="M13 5.466V1.534a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384l-2.36 1.966a.25.25 0 0 1-.41-.192m0 9v-3.932a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384l-2.36 1.966a.25.25 0 0 1-.41-.192" />
+                        </svg> Update</button>
+
+                    <form class="form2">
+                        <input name="Coupon" placeholder="Enter Your Coupon">
+                        <button type="button" class="table-btn"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                height="16" fill="currentColor" class="bi bi-tag" viewBox="0 0 16 16">
+                                <path
+                                    d="M6 4.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m-1 0a.5.5 0 1 0-1 0 .5.5 0 0 0 1 0" />
+                                <path
+                                    d="M2 1h4.586a1 1 0 0 1 .707.293l7 7a1 1 0 0 1 0 1.414l-4.586 4.586a1 1 0 0 1-1.414 0l-7-7A1 1 0 0 1 1 6.586V2a1 1 0 0 1 1-1m0 5.586 7 7L13.586 9l-7-7H2z" />
+                            </svg> Apply</button>
+                    </form>
+
+                </div>
+                <div class="col-lg-6">
+                    <div class="cart-total">
+                        <h4>Cart Totals</h4>
+                        <table class="table table-bordered mb-5">
+                            <tbody>
+                                <tr>
+                                    <td>Cart Subtotal</td>
+                                    <td><span class="text-green">$240.00</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Shipping</td>
+                                    <td>Shipping</td>
+                                </tr>
+                                <tr>
+                                    <td>Total</td>
+                                    <td><span class="text-green">$240.00</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <button type="button" class="table-btn px-4 py-3"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-inboxes-fill" viewBox="0 0 16 16">
+                            <path d="M4.98 1a.5.5 0 0 0-.39.188L1.54 5H6a.5.5 0 0 1 .5.5 1.5 1.5 0 0 0 3 0A.5.5 0 0 1 10 5h4.46l-3.05-3.812A.5.5 0 0 0 11.02 1zM3.81.563A1.5 1.5 0 0 1 4.98 0h6.04a1.5 1.5 0 0 1 1.17.563l3.7 4.625a.5.5 0 0 1 .106.374l-.39 3.124A1.5 1.5 0 0 1 14.117 10H1.883A1.5 1.5 0 0 1 .394 8.686l-.39-3.124a.5.5 0 0 1 .106-.374zM.125 11.17A.5.5 0 0 1 .5 11H6a.5.5 0 0 1 .5.5 1.5 1.5 0 0 0 3 0 .5.5 0 0 1 .5-.5h5.5a.5.5 0 0 1 .496.562l-.39 3.124A1.5 1.5 0 0 1 14.117 16H1.883a1.5 1.5 0 0 1-1.489-1.314l-.39-3.124a.5.5 0 0 1 .121-.393z"/>
+                          </svg> Proceed To CheckOut</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer - Main -->
+
+    <div class="footer">
+        <footer class="main">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-7">
+                        <div class="row">
+                            <div class="col-lg-1">
+                                <!-- <img src="Asstes/img/icon-email.svg" class="img-fluid" alt=""> -->
+                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-envelope-at-fill" viewBox="0 0 16 16">
+                                    <path d="M2 2A2 2 0 0 0 .05 3.555L8 8.414l7.95-4.859A2 2 0 0 0 14 2zm-2 9.8V4.698l5.803 3.546zm6.761-2.97-6.57 4.026A2 2 0 0 0 2 14h6.256A4.5 4.5 0 0 1 8 12.5a4.49 4.49 0 0 1 1.606-3.446l-.367-.225L8 9.586zM16 9.671V4.697l-5.803 3.546.338.208A4.5 4.5 0 0 1 12.5 8c1.414 0 2.675.652 3.5 1.671"/>
+                                    <path d="M15.834 12.244c0 1.168-.577 2.025-1.587 2.025-.503 0-1.002-.228-1.12-.648h-.043c-.118.416-.543.643-1.015.643-.77 0-1.259-.542-1.259-1.434v-.529c0-.844.481-1.4 1.26-1.4.585 0 .87.333.953.63h.03v-.568h.905v2.19c0 .272.18.42.411.42.315 0 .639-.415.639-1.39v-.118c0-1.277-.95-2.326-2.484-2.326h-.04c-1.582 0-2.64 1.067-2.64 2.724v.157c0 1.867 1.237 2.654 2.57 2.654h.045c.507 0 .935-.07 1.18-.18v.731c-.219.1-.643.175-1.237.175h-.044C10.438 16 9 14.82 9 12.646v-.214C9 10.36 10.421 9 12.485 9h.035c2.12 0 3.314 1.43 3.314 3.034zm-4.04.21v.227c0 .586.227.8.581.8.31 0 .564-.17.564-.743v-.367c0-.516-.275-.708-.572-.708-.346 0-.573.245-.573.791"/>
+                                  </svg>
+                            </div>
+                            <div class="col-lg-5">
+                                <div class="email-address">
+                                    <h4>Sign up to Newsletter</h4>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="coupon">
+                                    <h5>...and receive $25 coupon for first shopping.</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-5">
+                        <form class="form-newsletter">
+                            <input type="email" class="form-control" placeholder="Enter your email">
+                            <div class="input-group-append">
+                                <button class="btn btn-outline-secondary" type="submit">Subscribe</button>
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Footer Section -->
+
+        <section class="footer-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="widget-title">
+                            <div class="logo">
+                                <a href="index.html">
+                                    <img src="Asstes/img/logo.svg" class="img-fluid" width="120px" alt="">
+                                </a>
+                            </div>
+                            <h5 class="widget-h5">Contact</h5>
+                            <p class="widget-p">
+                                <strong>Address: </strong>562 Wellington Road, Street 32, San Francisco
+                            </p>
+                            <p class="widget-p">
+                                <strong>Phone: </strong>+01 2222 365 /(+91) 01 2345 6789
+                            </p>
+                            <p class="widget-p">
+                                <strong>Hours: </strong>10:00 - 18:00, Mon - Sat
+                            </p>
+                            <h5 class="widget-h5">Follow Us</h5>
+                            <div class="widget-social">
+                                <a href="#"><img src="Asstes/img/icon-facebook (1).svg" class="img-fluid" alt=""></a>
+                                <a href="#"><img src="Asstes/img/icon-twitter.svg" class="img-fluid" alt=""></a>
+                                <a href="#"><img src="Asstes/img/icon-instagram.svg" class="img-fluid" alt=""></a>
+                                <a href="#"><img src="Asstes/img/icon-pinterest.svg" class="img-fluid" alt=""></a>
+                                <a href="#"><img src="Asstes/img/icon-youtube.svg" class="img-fluid" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2">
+                        <h5 class="category-h5">About</h5>
+                        <ul class="categories">
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="#">Delivery Information</a></li>
+                            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                            <li><a href="terms.html">Terms & Conditions</a></li>
+                            <li><a href="page-contact.html">Contact Us</a></li>
+                            <li><a href="page-contact.html">Support Center</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-2">
+                        <h5 class="category-h5">My Account</h5>
+                        <ul class="categories">
+                            <li><a href="page-login.html">Sign In</a></li>
+                            <li><a href="shop-cart.html">View Cart</a></li>
+                            <li><a href="shop-wishlist.html">My Wishlist</a></li>
+                            <li><a href="#">Track My Order</a></li>
+                            <li><a href="#">Help</a></li>
+                            <li><a href="#">Order</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4">
+                        <h5 class="category-h5">Install App</h5>
+                        <p class="widget-p mb-2">From App Store or Google Play</p>
+                        <div class="download">
+                            <a href=""><img src="Asstes/img/app-store.jpg" class="img-fluid" alt=""></a>
+                            <a href=""><img src="Asstes/img/google-play.jpg" class="img-fluid" alt=""></a>
+                        </div>
+                        <p class="widget-p mb-2">Secured Payment Gateways</p>
+                        <img src="Asstes/img/payment-method.png" class="img-fluid" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="container footer-end">
+            <div class="row mt-4">
+                <div class="col-lg-6">
+                    <p>© 2022, <span class="text-green">Evara</span> - HTML Ecommerce Template</p>
+                </div>
+                <div class="col-lg-6">
+                    <p class="footer-end-p">Designed by <span><a href="#">SHAS</a></span>. All rights reserved</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
